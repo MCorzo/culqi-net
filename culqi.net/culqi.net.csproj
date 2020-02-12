@@ -54,10 +54,28 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="model\" />
+    <None Remove="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Charge.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Iin.cs" />
+    <Compile Include="model\Config.cs" />
+    <Compile Include="model\Security.cs" />
+    <Compile Include="Plan.cs" />
+    <Compile Include="Refund.cs" />
+    <Compile Include="Subscription.cs" />
+    <Compile Include="test\TestAll.cs" />
+    <Compile Include="test\TestCreate.cs" />
+    <Compile Include="test\TestPatch.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="Transfer.cs" />
+    <Compile Include="util\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Properties\" />
-    <Folder Include="util\" />
-    <Folder Include="test\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
